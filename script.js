@@ -155,7 +155,7 @@ var addMarkers = function(data) {
         placeInfo: d
       },
     ).on('click', function(e) {
-      map.flyTo(this._latlng, 11);
+      map.flyTo(this._latlng, 18);
       updateSidebar(this);
     });
 
@@ -242,7 +242,7 @@ var initMap = function() {
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd',
-    maxZoom: 25
+    maxZoom: 19
   }).addTo(map);
 
   loadData(dataLocation);
