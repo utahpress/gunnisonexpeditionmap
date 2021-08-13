@@ -4,7 +4,7 @@ const dataLocation = 'data/places.csv';
 
 // Map's initial center, and zoom level
 const mapCenter = [39.07649, -94.62493]; 
-const mapZoom = 20;
+const mapZoom = 7;
 
 // Marker icon height and width
 const iconHeight = 40;
