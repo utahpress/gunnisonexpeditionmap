@@ -33,6 +33,9 @@ var resetSidebar = function() {
 
     // Reset hash
     location.hash = '';
+    
+    // Reset Zoom
+     mapZoom = '7';
 }
 
 /*
