@@ -265,7 +265,7 @@ var initMap = function() {
   // Add custom `home` control
   addHomeButton();
 
-  $('#closeButton').on('click', resetView);
+  $('#closeButton').on('click', resetZoom);
 }
 
 // When DOM is loaded, initialize the map
