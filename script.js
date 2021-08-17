@@ -35,7 +35,7 @@ var resetSidebar = function() {
     location.hash = '';
     
     // Reset Zoom
-     map.flyTo(this._latlng, 7);
+     map.flyTo(7);
 }
 
 /*
