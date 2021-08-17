@@ -19,6 +19,13 @@ var resetView = function() {
 }
 
 /*
+ * Resets map view to originally defined `mapZoom` in settings.js
+ */
+var resetZoom = function() {
+  map.flyTo( mapZoom );
+}
+
+/*
  * Resets sidebar, clearing out place info and leaving title+footer only
  */
 var resetSidebar = function() {
@@ -47,6 +54,7 @@ var updateSidebar = function(marker) {
     // Deselect current icon
     L.DomUtil.removeClass(marker._icon, 'markerActive');
     resetSidebar();
+    resetZoom();
   } else {
     location.hash = d.slug;
 
