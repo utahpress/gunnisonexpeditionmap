@@ -14,7 +14,7 @@ var slugify = function(str) {
  * Resets map view to originally defined `mapCenter` and `mapZoom` in settings.js
  */
 var resetView = function() {
-  map.flyTo( mapZoom );
+  map.flyTo( mapCenter, mapZoom );
   resetSidebar();
 }
 
@@ -31,10 +31,8 @@ var resetSidebar = function() {
     $('#placeInfo div').html('');
     $('#googleMaps').addClass('dn').removeClass('dt');
 
-
     // Reset hash
     location.hash = '';
-    
 }
 
 /*
