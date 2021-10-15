@@ -22,7 +22,7 @@ var resetView = function() {
  * Zoom out when X is clicked
  */
 var zoomOut = function() {
-  map.zoomOut(mapZoom,animate);
+  map.zoomOut(mapZoom,true);
   resetSidebar();
 }
 
