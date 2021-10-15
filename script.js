@@ -19,6 +19,14 @@ var resetView = function() {
 }
 
 /*
+ * Zoom out when X is clicked
+ */
+var zoomOut = function() {
+  map.zoomOut( 7 );
+  resetSidebar();
+}
+
+/*
  * Resets sidebar, clearing out place info and leaving title+footer only
  */
 var resetSidebar = function() {
@@ -258,7 +266,7 @@ var initMap = function() {
   // Add custom `home` control
   addHomeButton();
 
-  $('#closeButton').on('click', resetView);
+  $('#closeButton').on('click', zoomOut);
 }
 
 // When DOM is loaded, initialize the map
